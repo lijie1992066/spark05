@@ -90,7 +90,7 @@ object Bootstrap {
         val y = bd.value(index)._4
         (ipLong, x._1, x._2, p, y)
       }
-    }).repartition(1).saveAsTextFile("C:\\Users\\Administrator\\Desktop\\out")
+    }).repartition(1).saveAsTextFile("src/main/file/out")
     sc.stop()
   }
 }
